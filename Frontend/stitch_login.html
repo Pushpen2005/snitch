@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Snitch - Nocturnal Intelligence Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#711132",
+                      "on-primary-fixed-variant": "#450074",
+                      "inverse-surface": "#fcf8f8",
+                      "outline": "#777575",
+                      "on-surface": "#ffffff",
+                      "surface-bright": "#2c2c2c",
+                      "secondary-dim": "#c185ec",
+                      "secondary-container": "#632a8d",
+                      "error-container": "#a70138",
+                      "on-background": "#ffffff",
+                      "primary-dim": "#a533ff",
+                      "on-primary": "#480079",
+                      "on-error": "#490013",
+                      "on-secondary": "#43006d",
+                      "secondary-fixed": "#e9c4ff",
+                      "on-tertiary-container": "#5a0023",
+                      "primary-container": "#c683ff",
+                      "tertiary-dim": "#f27794",
+                      "background": "#0e0e0e",
+                      "surface-container-low": "#131313",
+                      "secondary-fixed-dim": "#e0b2ff",
+                      "primary-fixed-dim": "#bc6fff",
+                      "tertiary-container": "#ff819f",
+                      "surface-dim": "#0e0e0e",
+                      "tertiary-fixed-dim": "#f87c99",
+                      "on-primary-container": "#37005f",
+                      "on-surface-variant": "#adaaaa",
+                      "surface-container-high": "#201f1f",
+                      "surface-variant": "#262626",
+                      "on-tertiary-fixed": "#380013",
+                      "primary-fixed": "#c683ff",
+                      "on-tertiary": "#6a0a2d",
+                      "surface": "#0e0e0e",
+                      "tertiary-fixed": "#ff8fa8",
+                      "on-secondary-fixed-variant": "#6e3598",
+                      "surface-tint": "#cf96ff",
+                      "on-secondary-container": "#e8c2ff",
+                      "inverse-primary": "#8d00e6",
+                      "surface-container-highest": "#262626",
+                      "error-dim": "#d73357",
+                      "error": "#ff6e84",
+                      "on-error-container": "#ffb2b9",
+                      "inverse-on-surface": "#565554",
+                      "surface-container-lowest": "#000000",
+                      "primary": "#cf96ff",
+                      "secondary": "#cc8ff8",
+                      "tertiary": "#ff98ae",
+                      "outline-variant": "#494847",
+                      "on-primary-fixed": "#000000",
+                      "surface-container": "#1a1919",
+                      "on-secondary-fixed": "#4f1179"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(38, 38, 38, 0.6);
+            backdrop-filter: blur(12px);
+        }
+        .liquid-gradient {
+            background: linear-gradient(135deg, #cf96ff 0%, #c683ff 100%);
+        }
+        .nocturnal-shadow {
+            box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.8);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col">
+<!-- Auth Layout Wrapper -->
+<main class="flex-grow flex flex-col md:flex-row items-stretch overflow-hidden">
+<!-- Left: Brand Section (Asymmetric & Atmospheric) -->
+<section class="relative hidden md:flex flex-col justify-center px-16 lg:px-24 w-1/2 bg-surface overflow-hidden">
+<!-- Decorative Light Leak -->
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute -bottom-48 right-0 w-[500px] h-[500px] bg-secondary-container/10 rounded-full blur-[160px]"></div>
+<div class="relative z-10 space-y-8">
+<div class="space-y-2">
+<h1 class="text-7xl font-bold tracking-tighter font-headline text-white">
+                        Snitch
+                    </h1>
+<p class="text-primary font-headline tracking-widest uppercase text-sm font-medium">
+                        Nocturnal Intelligence
+                    </p>
+</div>
+<div class="max-w-md">
+<h2 class="text-3xl font-light leading-snug font-headline text-on-surface">
+                        The workshop for the <span class="text-primary italic">modern architect</span>. Observe the unknown through violet lenses.
+                    </h2>
+</div>
+<div class="pt-12 grid grid-cols-2 gap-8">
+<div class="space-y-2">
+<p class="text-primary text-2xl font-bold font-headline">99.8%</p>
+<p class="text-on-surface-variant text-xs uppercase font-headline tracking-tighter">Detection Accuracy</p>
+</div>
+<div class="space-y-2">
+<p class="text-primary text-2xl font-bold font-headline">0.4ms</p>
+<p class="text-on-surface-variant text-xs uppercase font-headline tracking-tighter">Neural Latency</p>
+</div>
+</div>
+</div>
+<!-- Subtle Grid Pattern -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 24px 24px;"></div>
+</section>
+<!-- Right: Login Canvas -->
+<section class="flex-grow flex items-center justify-center p-6 sm:p-12 bg-surface-container-low relative">
+<!-- Mobile Brand Header -->
+<div class="absolute top-8 left-8 md:hidden">
+<h1 class="text-3xl font-bold tracking-tighter font-headline text-white">Snitch</h1>
+</div>
+<div class="w-full max-w-md space-y-12">
+<header class="space-y-4">
+<h3 class="text-4xl font-bold font-headline tracking-tight">Access the Void</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">Enter your credentials to resume your architectural workspace.</p>
+</header>
+<form class="space-y-8">
+<div class="space-y-6">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block text-xs font-headline uppercase tracking-widest text-on-surface-variant px-1" for="email">Email Identity</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">alternate_email</span>
+<input class="w-full bg-surface-container border-none text-on-surface placeholder:text-outline-variant focus:ring-1 focus:ring-primary/40 rounded-xl py-4 pl-12 pr-4 transition-all duration-300" id="email" name="email" placeholder="architect@snitch.io" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-center px-1">
+<label class="block text-xs font-headline uppercase tracking-widest text-on-surface-variant" for="password">Encrypted Key</label>
+<a class="text-xs text-primary-dim hover:text-primary transition-colors font-label uppercase tracking-tighter" href="#">Recovery</a>
+</div>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors">lock_open</span>
+<input class="w-full bg-surface-container border-none text-on-surface placeholder:text-outline-variant focus:ring-1 focus:ring-primary/40 rounded-xl py-4 pl-12 pr-4 transition-all duration-300" id="password" name="password" placeholder="••••••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined">visibility_off</span>
+</button>
+</div>
+</div>
+</div>
+<div class="space-y-6 pt-4">
+<button class="w-full liquid-gradient text-on-primary font-headline font-bold py-4 rounded-xl active:scale-95 transition-transform duration-200 nocturnal-shadow" type="submit">
+                            Initialize Session
+                        </button>
+<div class="flex items-center gap-4 py-2">
+<div class="h-px bg-surface-container-high flex-grow"></div>
+<span class="text-xs font-headline uppercase tracking-widest text-on-surface-variant">Federated Link</span>
+<div class="h-px bg-surface-container-high flex-grow"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 bg-surface-container hover:bg-surface-container-high border border-outline-variant/20 py-3 rounded-xl transition-all duration-300" type="button">
+<img alt="" class="w-5 h-5" data-alt="minimalist google icon logo in white monochrome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKHAZiCOOvm_kwKdE1dECtO16Oqrdf24rGczarXvhZTrvRPb7LD7K0NfW0vEUEiLnHJ1rYbxxjZiYROhrTLpioz4rPjQdx9ld03r80Zr5_Y6Mz16ckr7B2ySrB7Ff2LgR96ptnjsHnDMhXT1pSfgxwcgnk53blgqIdR_7nw3g6rbzuA-CX7FRKWiAh4z4n8BdwrospBJePvfPreKoJzVJGsibzwcm86mRaAXqvOBPQjULleBI40C0oAJtJThSJmxE-J9KJURHPt90"/>
+<span class="text-sm font-medium">Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 bg-surface-container hover:bg-surface-container-high border border-outline-variant/20 py-3 rounded-xl transition-all duration-300" type="button">
+<img alt="" class="w-5 h-5" data-alt="minimalist github octocat icon logo in white monochrome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0ua91F9ywtYcWvCVF-azd5LpakFrS6-CInAbfzZ4yxmlLsElltGRZj41vxo5BlcMMw-ue4Hmrmypf3eTwXdvKGjMMIOW7sxWXLqHJuW2kCDrcBX8MwA0e7LIMccTkwuNcby6XVYJEIcUfsUsb50OrtyVSRl_3qFzjMjLkbNtcp0hdjKBFqT2dlhZKJV53cYFO9j21F4U2JOzYQFkcosZ6Kkxu11tsVVTbRFquptwt0BeS5Z02eC-lKNnGyJQu00wIpXsRbtMCCIA"/>
+<span class="text-sm font-medium">GitHub</span>
+</button>
+</div>
+</div>
+</form>
+<footer class="text-center">
+<p class="text-on-surface-variant text-sm">
+                        New to the atelier? <a class="text-primary font-bold hover:underline" href="#">Apply for Access</a>
+</p>
+</footer>
+</div>
+</section>
+</main>
+<!-- Shared Footer Anchor -->
+<footer class="bg-[#131313] flex flex-col md:flex-row justify-between items-center w-full px-12 py-10 mt-auto">
+<div class="flex items-center gap-6 mb-6 md:mb-0">
+<span class="text-lg font-bold text-white font-['Space_Grotesk'] tracking-tighter">Snitch</span>
+<span class="text-[#adaaaa] text-[10px] font-['Space_Grotesk'] uppercase tracking-[0.2em] border-l border-outline-variant/20 pl-6">© 2024 Snitch Nocturnal Intelligence</span>
+</div>
+<nav class="flex gap-10">
+<a class="text-[#adaaaa] hover:text-[#cf96ff] transition-colors duration-200 text-xs font-['Space_Grotesk'] uppercase tracking-widest" href="#">Privacy</a>
+<a class="text-[#adaaaa] hover:text-[#cf96ff] transition-colors duration-200 text-xs font-['Space_Grotesk'] uppercase tracking-widest" href="#">Terms</a>
+<a class="text-[#adaaaa] hover:text-[#cf96ff] transition-colors duration-200 text-xs font-['Space_Grotesk'] uppercase tracking-widest" href="#">Security</a>
+</nav>
+</footer>
+</body></html>

@@ -1,0 +1,25 @@
+/* App-level resets and layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Override any legacy dark mode or conflicting globals */
+body {
+  background: var(--off-white, #FFF8F1) !important;
+  color: var(--text-body, #4D4637) !important;
+}
+
+/* Hide desktop-only panels on mobile */
+@media (max-width: 768px) {
+  .brand-panel {
+    display: none !important;
+  }
+}
+
+/* Ensure all form inputs use the right font */
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+/* Remove default button styles */
+button { background: none; }

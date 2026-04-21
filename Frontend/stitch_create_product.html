@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NOCTURNAL INTEL - Create Product</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#3d495a",
+                        "secondary-fixed": "#bdd2ff",
+                        "on-surface": "#dae6fc",
+                        "secondary-container": "#005cbb",
+                        "primary": "#a1faff",
+                        "inverse-primary": "#006a6e",
+                        "on-background": "#dae6fc",
+                        "on-tertiary-container": "#002440",
+                        "error": "#ff716c",
+                        "on-surface-variant": "#a0acc0",
+                        "surface-tint": "#a1faff",
+                        "on-tertiary": "#003053",
+                        "surface-bright": "#1b2d45",
+                        "surface-container-low": "#061425",
+                        "primary-fixed": "#00f4fe",
+                        "tertiary-fixed-dim": "#49a8fc",
+                        "surface-container-highest": "#15263c",
+                        "surface-container-high": "#102034",
+                        "surface-container-lowest": "#000000",
+                        "error-container": "#9f0519",
+                        "secondary-dim": "#0072e4",
+                        "background": "#040f1e",
+                        "secondary": "#629dff",
+                        "on-primary-fixed-variant": "#006266",
+                        "tertiary-fixed": "#6bb6ff",
+                        "tertiary-dim": "#41a3f7",
+                        "on-primary-container": "#00575b",
+                        "on-error-container": "#ffa8a3",
+                        "on-primary": "#006165",
+                        "on-secondary-fixed-variant": "#004fa1",
+                        "secondary-fixed-dim": "#a6c4ff",
+                        "tertiary": "#64b3ff",
+                        "primary-container": "#00f4fe",
+                        "inverse-on-surface": "#4a5668",
+                        "surface": "#040f1e",
+                        "outline": "#6b7689",
+                        "on-secondary-fixed": "#00336d",
+                        "error-dim": "#d7383b",
+                        "on-tertiary-fixed-variant": "#003c65",
+                        "tertiary-container": "#45a6fa",
+                        "on-secondary-container": "#f7f7ff",
+                        "on-primary-fixed": "#004346",
+                        "surface-dim": "#040f1e",
+                        "inverse-surface": "#f8f9ff",
+                        "on-error": "#490006",
+                        "primary-fixed-dim": "#00e5ee",
+                        "surface-container": "#0b1a2d",
+                        "primary-dim": "#00e5ee",
+                        "on-tertiary-fixed": "#00192f",
+                        "on-secondary": "#001f47",
+                        "surface-variant": "#15263c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #040f1e;
+            color: #dae6fc;
+            font-family: 'Inter', sans-serif;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none !important;
+            box-shadow: 0 0 0 2px #00f5ff66;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(161, 250, 255, 0.1);
+            border-left: 1px solid rgba(161, 250, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="dark overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#040f1e] backdrop-blur-xl bg-opacity-80 flex items-center justify-between px-8 h-16 w-full shadow-none font-['Inter'] tracking-tight antialiased">
+<div class="flex items-center gap-8">
+<span class="text-lg font-bold tracking-[-0.02em] text-[#dae6fc]">NOCTURNAL INTEL</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-[#a1faff] hover:text-[#00f5ff] transition-colors duration-300" href="#">Dashboard</a>
+<a class="text-[#00f5ff] font-medium transition-colors duration-300" href="#">Inventory</a>
+<a class="text-[#a1faff] hover:text-[#00f5ff] transition-colors duration-300" href="#">Analytics</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative group hidden md:block">
+<input class="bg-surface-container-high border-none text-on-surface text-sm px-4 py-2 w-64 rounded-xl focus:ring-1 focus:ring-primary transition-all" placeholder="Search Intel..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-outline text-sm">search</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-highest">
+<img alt="User profile" data-alt="close-up portrait of a digital user avatar in a sleek tech-focused interface style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs5LG1H5675OwSFKtuNK66G3-B1oJV8C-MRnDWO6spyrTp0EdhX14mu4SSq4t12ytRLmgdjROXSJ4SWvQpJ_4nSMEJz8A-glfHq8P-7RT3PxJRz_6CZeX9sylCvlI8fFz6MlhbNrJ3Far405UdJq5WhW3D0UKCX-3D8gFSr8RRYgjsKE2DeBOHiLSgZzrZ-D_bf3XUofw9N7nC_0mRAn1AbGi381DO6Nj-g40ihheEsUeEA2aq3Ahg19AavtsxigBhqJN7ok2kMOA"/>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Contextual Hidden for Create Flow, but kept for Layout reference) -->
+<aside class="h-screen w-64 fixed left-0 top-0 bg-[#061425] flex flex-col py-8 z-40 hidden lg:flex">
+<div class="px-6 mb-12 mt-16">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary" style="font-variation-settings: 'FILL' 1;">dataset</span>
+</div>
+<div>
+<h2 class="text-[#dae6fc] font-bold text-sm tracking-tight">Core Terminal</h2>
+<p class="font-['Inter'] uppercase tracking-[0.1em] text-[10px] text-primary">Active Session</p>
+</div>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 font-['Inter'] uppercase tracking-[0.1em] text-[11px] text-[#a1faff] hover:bg-[#102034] transition-all duration-200 rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">grid_view</span>
+                    Dashboard
+                </a>
+<a class="flex items-center gap-4 px-4 py-3 font-['Inter'] uppercase tracking-[0.1em] text-[11px] text-[#00f5ff] border-l-2 border-[#00f5ff] bg-gradient-to-r from-[#00f5ff]/10 to-transparent transition-all duration-200 rounded-r-lg group" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+                    Inventory
+                </a>
+<a class="flex items-center gap-4 px-4 py-3 font-['Inter'] uppercase tracking-[0.1em] text-[11px] text-[#a1faff] hover:bg-[#102034] transition-all duration-200 rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">insights</span>
+                    Analytics
+                </a>
+<a class="flex items-center gap-4 px-4 py-3 font-['Inter'] uppercase tracking-[0.1em] text-[11px] text-[#a1faff] hover:bg-[#102034] transition-all duration-200 rounded-lg group" href="#">
+<span class="material-symbols-outlined group-hover:text-primary">shopping_cart</span>
+                    Orders
+                </a>
+</nav>
+</div>
+<div class="mt-auto px-6 space-y-4">
+<button class="w-full py-3 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold text-[11px] uppercase tracking-[0.1em] rounded-xl hover:shadow-[0_0_15px_rgba(161,250,255,0.3)] transition-all active:scale-95">
+                Create New Listing
+            </button>
+<div class="pt-6 border-t border-outline-variant/20 space-y-2">
+<a class="flex items-center gap-4 px-4 py-2 font-['Inter'] uppercase tracking-[0.1em] text-[11px] text-[#a1faff] hover:bg-[#102034] transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined text-sm">help_outline</span>
+                    Support
+                </a>
+<a class="flex items-center gap-4 px-4 py-2 font-['Inter'] uppercase tracking-[0.1em] text-[11px] text-[#a1faff] hover:bg-[#102034] transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined text-sm">logout</span>
+                    Logout
+                </a>
+</div>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="min-h-screen pt-24 pb-12 px-6 lg:ml-64 transition-all duration-500">
+<div class="max-w-5xl mx-auto">
+<!-- Header Section -->
+<div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<nav class="flex items-center gap-2 text-on-surface-variant text-xs uppercase tracking-widest mb-3">
+<a class="hover:text-primary transition-colors" href="#">Inventory</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-primary font-bold">New Listing</span>
+</nav>
+<h1 class="text-4xl md:text-5xl font-['Inter'] font-semibold tracking-tight text-on-surface">Initiate Asset</h1>
+<p class="text-on-surface-variant mt-2 text-lg font-light">Deploy a new data entity to the nocturnal network.</p>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2.5 rounded-xl text-on-surface border border-outline-variant hover:bg-surface-container-high transition-all text-sm font-medium">
+                        Discard Draft
+                    </button>
+<button class="px-8 py-2.5 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all text-sm uppercase tracking-wider">
+                        Publish Intel
+                    </button>
+</div>
+</div>
+<!-- Form Content -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Core Data -->
+<div class="lg:col-span-7 space-y-8">
+<!-- Basic Info Card -->
+<section class="bg-surface-container-low rounded-3xl p-8 space-y-6">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">description</span>
+<h3 class="font-['Inter'] uppercase tracking-[0.1em] text-xs text-on-surface-variant font-semibold">Core Specifications</h3>
+</div>
+<div class="space-y-1">
+<label class="font-['Inter'] uppercase tracking-[0.1em] text-[10px] text-primary ml-1">Asset Title</label>
+<input class="w-full bg-surface-container-highest text-on-surface px-6 py-4 rounded-2xl border-none focus:ring-1 focus:ring-primary transition-all text-lg placeholder:text-outline-variant/60" placeholder="Enter identification label..." type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-['Inter'] uppercase tracking-[0.1em] text-[10px] text-primary ml-1">Description Brief</label>
+<textarea class="w-full bg-surface-container-highest text-on-surface px-6 py-4 rounded-2xl border-none focus:ring-1 focus:ring-primary transition-all resize-none text-base leading-relaxed placeholder:text-outline-variant/60" placeholder="Describe the asset's parameters, capabilities, and provenance..." rows="6"></textarea>
+</div>
+</section>
+<!-- Financial Parameters Card -->
+<section class="bg-surface-container-low rounded-3xl p-8">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">payments</span>
+<h3 class="font-['Inter'] uppercase tracking-[0.1em] text-xs text-on-surface-variant font-semibold">Valuation Settings</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 space-y-1">
+<label class="font-['Inter'] uppercase tracking-[0.1em] text-[10px] text-secondary ml-1">Acquisition Price</label>
+<div class="relative">
+<span class="absolute left-6 top-1/2 -translate-y-1/2 text-outline-variant font-mono">VAL_</span>
+<input class="w-full bg-surface-container-highest text-on-surface pl-16 pr-6 py-4 rounded-2xl border-none focus:ring-1 focus:ring-secondary transition-all text-xl font-mono" placeholder="0.00" type="number"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-['Inter'] uppercase tracking-[0.1em] text-[10px] text-secondary ml-1">Currency Code</label>
+<div class="relative">
+<select class="w-full bg-surface-container-highest text-on-surface px-6 py-4 rounded-2xl border-none focus:ring-1 focus:ring-secondary appearance-none cursor-pointer">
+<option>USD</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>BTC</option>
+<option>ETH</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline-variant">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Visual Assets -->
+<div class="lg:col-span-5 space-y-8">
+<section class="bg-surface-container-low rounded-3xl p-8 flex flex-col h-full">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">camera_enhance</span>
+<h3 class="font-['Inter'] uppercase tracking-[0.1em] text-xs text-on-surface-variant font-semibold">Visual Documentation</h3>
+</div>
+<span class="text-[10px] font-mono text-outline-variant uppercase">Slots: 0/7</span>
+</div>
+<!-- Dropzone -->
+<div class="relative group cursor-pointer border-2 border-dashed border-outline-variant/30 rounded-3xl p-10 flex flex-col items-center justify-center text-center transition-all hover:border-primary/50 hover:bg-primary/5">
+<div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-primary text-3xl">upload_file</span>
+</div>
+<p class="text-on-surface font-medium mb-1">Click or drag to uplink imagery</p>
+<p class="text-on-surface-variant text-xs font-light">Supports RAW, PNG, JPG up to 25MB each</p>
+<input accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" multiple="" type="file"/>
+</div>
+<!-- Preview Grid -->
+<div class="mt-8 grid grid-cols-3 gap-3">
+<!-- Slot 1 (Primary) -->
+<div class="col-span-3 aspect-[16/9] rounded-2xl bg-surface-container-high overflow-hidden border border-outline-variant/20 relative group">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" data-alt="ultra-wide high-detail architectural render of a futuristic building facade at night with cyan neon accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVg7U_dRC04MX5Uygf6WBGJ_3_68AViTWjG9gbtZSMPUm4cRgqoPaNhOklq4sYquNb7psG8SOkko6Ea6CtGAtlcTCa5Yfzvgguant-2adxQjKmih7MHZXe8vm6aQt0CGQx9ZCuZvt3cStOJ8mdaGgozFx2T_uBQzRoECAcy2KVlWdKYnU_NSsMoOA2HqOXzM7h_M5DDPPiR3_bMi2nLfHrdZHqY91hanXs0NMYXueWgrUMANvhw5DNxIcx2nIJJK1ijmlRp42SQa0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent flex items-end p-4">
+<span class="text-[10px] font-mono text-primary uppercase tracking-widest">Main Payload View</span>
+</div>
+<button class="absolute top-2 right-2 p-2 bg-background/60 rounded-full text-error hover:bg-error hover:text-on-error opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+<!-- Small Slots -->
+<div class="aspect-square rounded-xl bg-surface-container-high overflow-hidden border border-outline-variant/10 relative group">
+<img class="w-full h-full object-cover grayscale opacity-20" data-alt="macro close-up of high-tech circuitry with glowing fiber optic lines in deep blue and teal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnNEnEjwlW2Sj8jEoZ_W3y91wEMJs0jtN1ohoVreMN-MQUePD_cJos7vv7_qiLgeKT9lAY59cXQDx5tTiVRbDUmHBb4EvdOn8hIGwwie96vw53h-4Vp1QD6GknIue8PZ5U9YcDRgRISKH7ag3h7tXAdETkzJp6-BVACr2StAfw7sQPFjwr9VmSfXSDPlbD9Wxh0NYTv79vwFzynWBNAxBZJEqrKyEeTAf_-DJJm7zwQEG11mNAKYwvPj2xvFs4o3AWJkvONFEYL7o"/>
+<button class="absolute inset-0 flex items-center justify-center bg-background/40 opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</button>
+</div>
+<div class="aspect-square rounded-xl bg-surface-container-high overflow-hidden border border-outline-variant/10 relative group">
+<img class="w-full h-full object-cover grayscale opacity-20" data-alt="abstract bokeh of city lights reflected on a rain-slicked dark surface with cool blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxi64HjwWJZmWksRB-RlUDOoW9hbMUcejRol6mAHUOPnqHIsXPlt7JypYpA-C2Lq1nwMyBGlkswIU3t19cs2n0VpnqS27ioeHI7uGhoGiQEJ9fK2tNx4GP81qw0nWD6HMKDZD2Ad7Tvx3V8WD9eVq0Cik_KGdmM3Xj8o7lEZM4tTgFGmFVdTwGVK96Gqkh7G6awh1LQxqwB--WgmBbelA7Qv2Alopmd76UnasX5zI3Cw3_PW1UYIga34I1x6fXur_kPvshGgua4vw"/>
+<button class="absolute inset-0 flex items-center justify-center bg-background/40 opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</button>
+</div>
+<div class="aspect-square rounded-xl bg-surface-container-high overflow-hidden border border-outline-variant/10 relative group">
+<img class="w-full h-full object-cover grayscale opacity-20" data-alt="microscopic view of liquid metal textures with shimmering iridescent surfaces in a dark laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKFx5_NHJJuJpliONs2USC_kolIoYTbvEZVUn0-ZNOlB8sjy7ns5aj6rkhsGXv5IjHyMR5DXxn31L4cNAQXVNLsvVgNacTxGfqiVrrtEu8tcTANmwnLvKM4_1dOp7Vl3fu4bNVLjVnSQ9GlFWK4N3rNUnCf9YS3ci8lDaBtEvibG7KzbxAiXcknKnMcUj1VnfwJScWUFPmA7l9gpdSVcpyBFm-HX43m7XJfZFDGZwzIwEGsXZIE2EaRPGHEv1cKpSFf86OJHFPeZk"/>
+<button class="absolute inset-0 flex items-center justify-center bg-background/40 opacity-0 group-hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</button>
+</div>
+<div class="aspect-square rounded-xl border border-dashed border-outline-variant/20 flex items-center justify-center text-outline-variant/40 hover:text-primary transition-colors cursor-pointer hover:border-primary/30">
+<span class="material-symbols-outlined">add_photo_alternate</span>
+</div>
+<div class="aspect-square rounded-xl border border-dashed border-outline-variant/20 flex items-center justify-center text-outline-variant/40 hover:text-primary transition-colors cursor-pointer hover:border-primary/30">
+<span class="material-symbols-outlined">add_photo_alternate</span>
+</div>
+<div class="aspect-square rounded-xl border border-dashed border-outline-variant/20 flex items-center justify-center text-outline-variant/40 hover:text-primary transition-colors cursor-pointer hover:border-primary/30">
+<span class="material-symbols-outlined">add_photo_alternate</span>
+</div>
+</div>
+<div class="mt-auto pt-8">
+<div class="p-4 rounded-2xl bg-surface-container-high/50 border border-outline-variant/10">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">info</span>
+<p class="text-[11px] leading-relaxed text-on-surface-variant font-light">High-resolution imagery increases asset discoverability by 47%. Ensure neutral backgrounds and clear focus on key data points.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Footer Meta -->
+<footer class="mt-12 flex items-center justify-center gap-12 text-outline-variant text-[10px] uppercase tracking-[0.2em] opacity-40">
+<span>V-CORE 9.4.1</span>
+<span>SECURE NODE ENCRYPTION</span>
+<span>DATA INTEGRITY VERIFIED</span>
+</footer>
+</div>
+</main>
+<!-- Contextual FAB (Only for Home/Dashboard, but shown here for UI completeness as requested if aligned) -->
+<!-- Suppression logic: On detailed creation pages, we suppress FAB to focus on form. -->
+</body></html>

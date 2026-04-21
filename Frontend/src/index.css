@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Tailwind v4 Theme Tokens ── */
+@theme {
+  --color-gold:          #C9A84C;
+  --color-gold-deep:     #A07830;
+  --color-gold-light:    #F5E6C0;
+  --color-gold-muted:    #E6C364;
+  --color-gold-bg:       rgba(201,168,76,0.08);
+  --color-gold-border:   rgba(201,168,76,0.25);
+  --color-snitch-white:  #FFFFFF;
+  --color-off-white:     #FFF8F1;
+  --color-surface:       #FFF2DB;
+  --color-heading:       #231A03;
+  --color-body:          #4D4637;
+  --color-muted:         #7E7665;
+  --color-subtle:        #9E9488;
+  --color-divider:       #D0C5B2;
+  --color-error:         #BA1A1A;
+  --color-error-bg:      #FFDAD6;
+  --color-success:       #2D6A4F;
+
+  --font-serif:  'Playfair Display', Georgia, serif;
+  --font-sans:   'Inter', system-ui, -apple-system, sans-serif;
+
+  --radius-full: 9999px;
+}
+
+/* ── Base Resets ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4D4637;
+  background: #FFF8F1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: #FFF8F1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #231A03;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+a { color: #C9A84C; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #A07830; }
+p { margin: 0; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FFF8F1; }
+::-webkit-scrollbar-thumb { background: #F5E6C0; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #E6C364; }
+
+/* ── Gold Spinner ── */
+.gold-spinner {
+  width: 2.5rem; height: 2.5rem;
+  border: 3px solid #F5E6C0;
+  border-top-color: #C9A84C;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
