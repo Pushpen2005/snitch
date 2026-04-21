@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:5173" || "http://localhost:5174",
+    origin: "http://localhost:5173" || "https://snitch-jw3t.vercel.app",
 
     methods: [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
     credentials: true

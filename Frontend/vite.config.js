@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      '/api':{ target: 'http://localhost:3002', changeOrigin: true ,secure: false}
+      '/api':{ target: 'https://snitch-h38x.onrender.com', changeOrigin: true ,secure: false}
     } 
   }
 })
